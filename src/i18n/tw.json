@@ -1,0 +1,47 @@
+{
+    "SignIn": {
+        "UsernameHint": "請輸入暱稱或使用者名稱",
+        "Avatar_URL_Hint": "請輸入圖片網址",
+        "LanguageSelect": "語言選擇",
+        "ReqestLoginInfo_Hint": "請設定聊天室",
+        "Username": "暱稱",
+        "RecognizedId":"帳號ID",
+        "Avatar": "頭貼圖像",
+        "English": "英文",
+        "Japanese": "日文",
+        "TC": "繁體中文",
+        "SignIn": "登入",
+        "Avatar_Position": {
+            "xHint": "水平位置",
+            "yHint": "垂直位置",
+            "xField": "X",
+            "yField": "Y"            
+        },
+        "Avatar_Preview": "頭像預覽",
+        "inputErrorHint": "暱稱不可為空白或與他人重複",
+        "recogIDHint":"請輸入帳號名稱或ID (6~10)",
+        "LoginError": "資料輸入有誤，不能為空白或重複"
+    },
+    "personalMsg": {
+        "saySomething": "說點什麼..."
+    },
+    "chatroomSetting": {
+        "UserText": "與會者",
+        "publicRoom": "公開聊天室",
+        "SearchHint": "搜尋使用者",
+        "typingBoxText": "點擊此處，輸入訊息"
+    },
+    "meetingBox": {
+        "configuration": "設定",
+        "close": "關閉"
+    },
+    "SystemInfo": {
+        "Login": "上線了!",
+        "Logout": "下線了!",
+        "UpToChatLimit": "私訊上限為3個聊天窗框"
+    },
+    "Feature": {
+        "constructing": "施工中..."
+    }
+
+}

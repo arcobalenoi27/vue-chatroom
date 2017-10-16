@@ -1,0 +1,47 @@
+{
+    "SignIn": {
+        "UsernameHint": "あだ名やユーザー名を入力してください",
+        "Avatar_URL_Hint": "サムネのアドレス(URL)を入力してください",
+        "LanguageSelect": "言語設定",
+        "ReqestLoginInfo_Hint": "コンフィグの内容を確認してください",
+        "Username": "あだ名",
+        "RecognizedId":"アカウント名",
+        "Avatar": "アバター",
+        "English": "英語",
+        "Japanese": "日本語",
+        "TC": "中国語（繁体字）",
+        "SignIn": "確認する",
+        "Avatar_Position": {
+            "xHint": "水平位置",
+            "yHint": "垂直位置",
+            "xField": "X",
+            "yField": "Y"            
+        },
+        "Avatar_Preview": "アバターのプレビュー",
+        "inputErrorHint": "あだ名は重複不可で空文字でない文字列で指定ください",
+        "recogIDHint":"アカウント情報やIDを入力してください",
+        "LoginError": "誤植や内容の不備などのエラーが発生します。フィールドを空文字にしないでください"
+    },
+    "personalMsg": {
+        "saySomething": "何かを入力してください"
+    },
+    "chatroomSetting": {
+        "UserText": "メンバー",
+        "publicRoom": "公開チャットルーム",
+        "SearchHint": "メンバー検索",
+        "typingBoxText": "ここをクリックしてメッセージを入力してください"
+    },
+    "meetingBox": {
+        "configuration": "コンフィグ",
+        "close": "閉じる"
+    },
+    "SystemInfo": {
+        "Login": "さんがログインしました。",
+        "Logout": "さんがログアウトしました。",
+        "UpToChatLimit": "私的メッセージの上限は三つです。"
+    },
+    "Feature": {
+        "constructing": "工事中..."
+    }
+
+}

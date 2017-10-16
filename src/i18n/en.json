@@ -1,0 +1,47 @@
+{
+    "SignIn": {
+        "UsernameHint": "Username or nickname here",
+        "Avatar_URL_Hint": "The url address of your image here",
+        "LanguageSelect": "Language",
+        "ReqestLoginInfo_Hint": "Please set up the configuration of chatroom",
+        "Username": "Nickname",
+        "RecognizedId":"Account ID",
+        "Avatar": "Avatar/Icon",
+        "English": "English",
+        "Japanese": "Japanese",
+        "TC": "Traditional Chinese",
+        "SignIn": "Login",
+        "Avatar_Position": {
+            "xHint": "Offset X here",
+            "yHint": "Offset Y here",
+            "xField": "X",
+            "yField": "Y"            
+        },
+        "Avatar_Preview": "Avatar Preview",
+        "inputErrorHint": "Nickname can not be duplicate or empty.",
+        "recogIDHint":"Account name or id here (6~10)",
+        "LoginError": "Some data you inputed was wrong, please check it again."
+    },
+    "personalMsg": {
+        "saySomething": "Type Something..."
+    },
+    "chatroomSetting": {
+        "UserText": "Chater",
+        "publicRoom": "Public Room",
+        "SearchHint": "Search...",
+        "typingBoxText": "Click here to type a chat message."
+    },
+    "meetingBox": {
+        "configuration": "setting",
+        "close": "close"
+    },
+    "SystemInfo": {
+        "Login": "has signed in chatroom.",
+        "Logout": "has signed out chatroom.",
+        "UpToChatLimit": "The max amount of Personal Message is 3."
+    },
+    "Feature": {
+        "constructing": "Coming soon"
+    }
+
+}
