@@ -16,7 +16,11 @@ Web technologies like Vue.js framework and vuex-i18n library and moment.js are u
 + You can input the url of the image you like. If this field is empty, system will choose image for you randomly. 
 
 #### Video
-[![Demo video](https://i.ytimg.com/vi/m2aEb5VE5Rs/hqdefault.jpg)](https://www.youtube.com/embed/m2aEb5VE5Rs)
+
+<a href="https://www.youtube.com/embed/m2aEb5VE5Rs" target="_blank">
+    <img src="https://i.ytimg.com/vi/m2aEb5VE5Rs/hqdefault.jpg" alt="Demo video">
+</a>
+
 
 
 ## Build Setup
