@@ -9,8 +9,15 @@ It is a real-time web chatroom develped in javascript, socket.io and other web t
 Web technologies like Vue.js framework and vuex-i18n library and moment.js are used in this project.
 
 ### Demo
+[Try it!](https://sly-rayon.glitch.me/#/)
+
+### How to login
++ Nickname and AccountID is required(6-8 characters). 
++ You can input the url of the image you like. If this field is empty, system will choose image for you randomly. 
+
 #### Video
-[It's a demo video about this chatroom](https://drive.google.com/file/d/0B77KOAr1FmqnOHZEWkN6TjBBRlU/view)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m2aEb5VE5Rs" frameborder="0" allowfullscreen></iframe>
+
 
 ## Build Setup
 
