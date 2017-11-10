@@ -19,6 +19,7 @@
         },
         "Avatar_Preview": "Avatar Preview",
         "inputErrorHint": "Nickname can not be duplicate or empty.",
+        "idErrorHint":"id can be English alphabet and number and not duplicate.",
         "recogIDHint":"Account name or id here (6~10)",
         "LoginError": "Some data you inputed was wrong, please check it again."
     },

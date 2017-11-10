@@ -20,6 +20,14 @@ export const parseYoutubeUrls = (youtubeList) => {
     return list;
 }
 
+export const checkId = (id) => {
+    let url_reg = /https?:\/\/.+/g;
+    let reg = /\w+/;
+    let isUrl = url_reg.test(id);
+    let match = reg.test(id);
+    return !isUrl && match;
+}
+
 export const notifiedSound  = () => {
     let audio = new Audio('http://www.soundjay.com/nature/sounds/water-droplet-2.mp3');
     audio.currentTime = 0;    

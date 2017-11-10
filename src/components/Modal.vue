@@ -20,13 +20,13 @@
             <!--  -->
             <div class="recog-id field-wrap">
                 <label>
-                    <div :class="['icon-wrap', { error: isDuplicateACID }]" :title="$t('SignIn.RecognizedId')">
+                    <div :class="['icon-wrap', { error: isDuplicateACID, typeError:! isCorrectId }]" :title="$t('SignIn.RecognizedId')">
                         <icon class="user-icon" name="id-badge"></icon>
                     </div>
-                    <input type="text" :class="['recog-id user-field', { 'error-frame': isDuplicateACID }]" :placeholder="$t('SignIn.recogIDHint')" v-model="accountId" @keyup.stop="checkDuplicateACID()">
+                    <input type="text" :class="['recog-id user-field', { 'error-frame': isDuplicateACID, typeErrorFrame: !isCorrectId }]" :placeholder="$t('SignIn.recogIDHint')" v-model="accountId" @keyup.stop="checkDuplicateACID()">
                 </label>
-                <div class="system-hint-box" v-if="isDuplicateACID">
-                    <span :class="['system-hint', {  error: isDuplicateACID }]">{{$t('SignIn.inputErrorHint')}}</span>
+                <div class="system-hint-box" v-if="isDuplicateACID || !isCorrectId">
+                    <span :class="['system-hint', {  error: isDuplicateACID, typeError: !isCorrectId }]">{{$t('SignIn.idErrorHint')}}</span>
                 </div>
             </div>
 
@@ -102,7 +102,8 @@ export default {
           avatar_pos: {},
           isDuplicateName: false,
           isDuplicateACID: false,
-          urlValid: false
+          urlValid: false,
+          idIsDirty: false
       }
   },
   computed: {
@@ -123,6 +124,13 @@ export default {
       },
       isCorrectUrl () {
           return this.getValidations.checkImgUrl(this.avatar_url);
+      },
+      isCorrectId () {
+          let self = this;
+          return self.idIsDirty === false ? true : helps.checkId(self.accountId);
+      },
+      test () {
+          return helps.checkId(self.accountId);
       }
   },
 
@@ -166,6 +174,7 @@ export default {
           let self = this;
           let index = _.findIndex(self.getUserList, { accountId: self.accountId.trim() });
           let isDuplicate = (index === -1) ? false : true;
+          this.idIsDirty = true;
           this.isDuplicateACID =isDuplicate;
       },
       checkUrl() {
@@ -380,6 +389,14 @@ $debug: false;
 
 .error {
     color: $error;
+}
+
+.typeError {
+    color: $error;
+}
+
+.typeErrorFrame {
+    border: 1px solid $error !important;
 }
 
 .error-frame {
