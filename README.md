@@ -9,7 +9,7 @@ It is a real-time web chatroom develped in javascript, socket.io and other web t
 Web technologies like Vue.js framework and vuex-i18n library and moment.js are used in this project.
 
 ### Try it
-[Click here to talk!](https://test-vue-chatroom.glitch.me/#/)
+<a href="https://test-vue-chatroom.glitch.me/#/" target="_blank">Click here to talk!</a>
 ### Demo
 #### Video
 [It's a demo video about this chatroom](https://drive.google.com/file/d/0B77KOAr1FmqnOHZEWkN6TjBBRlU/view)
