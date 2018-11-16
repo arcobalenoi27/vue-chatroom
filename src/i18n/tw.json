@@ -19,7 +19,6 @@
         },
         "Avatar_Preview": "頭像預覽",
         "inputErrorHint": "暱稱不可為空白或與他人重複",
-        "idErrorHint":"id可為英數字與底線且不可重複",
         "recogIDHint":"請輸入帳號名稱或ID (6~10)",
         "LoginError": "資料輸入有誤，不能為空白或重複"
     },

@@ -18,7 +18,7 @@ const locales = {
   tw: tw
 };
 
-let socket = io.connect('http://localhost:8080');
+let socket = io.connect();
 store.state.socket = socket;
 window.socket = socket;
 
