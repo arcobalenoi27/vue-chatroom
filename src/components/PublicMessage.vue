@@ -185,6 +185,7 @@ $debug: true;
                 text-align: justify;
                 padding: 0px 10px 15px;
                 overflow-y: scroll;
+                word-break: break-all;
                 &::-webkit-scrollbar {
                     display: none ;
                 }

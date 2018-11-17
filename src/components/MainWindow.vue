@@ -4,7 +4,7 @@
             <ChatInputBox :isLogin="isLogin" />
         </div>
         <div class="conversation-box">
-            <PublicMessage :key="post.toString()" v-for="post in getPublicMsg" :post="post"></PublicMessage>
+            <PublicMessage :key="post.time" v-for="post in getPublicMsg" :post="post"></PublicMessage>
         </div>
     </div>
 </template>

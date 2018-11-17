@@ -86,7 +86,7 @@ export default {
         //     return emt;
         // });
         state.youtubeHistory.history = data;
-        state.youtubeHistory.now = state.youtubeHistory.history.length - 1;
+        state.youtubeHistory.now = (state.youtubeHistory.history.length >0)? state.youtubeHistory.history.length - 1 : 0;
     },
     [types.ADDLOGINFO] (state, msg) {
         state.systemInfo = Object.assign({}, msg);

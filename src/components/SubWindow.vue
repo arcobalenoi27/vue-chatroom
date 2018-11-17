@@ -1,6 +1,6 @@
 <template>
     <div class="sub-box">
-        <Multimedia :key="media_source.toString()" v-for="media_source in filterMedia" :multiResouce="media_source" :top="top"></Multimedia>
+        <Multimedia :key="media_source.time" v-for="media_source in filterMedia" :multiResouce="media_source" :top="top"></Multimedia>
     </div>
 </template>
 
