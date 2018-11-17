@@ -64,6 +64,7 @@ exports.messageServer = (io) => {
                 postMsg.youtube = undefined;
             }
             postMsg.time = moment();
+            // console.log(global.youtubeList);
             io.emit('imgHistory', global.imgList);
             io.emit('youtubeHistory', global.youtubeList);
             io.emit('toPublic', postMsg);

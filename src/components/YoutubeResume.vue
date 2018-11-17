@@ -2,7 +2,7 @@
     <div :class="['youtube-history-box',{expand: !isMini}]">
 
         <div :class="['youtube-history', { collapse: isMini}]" >
-            <iframe v-show="!isMini" width="900" height="580" :src="chooseWhichVideo(getYoutubeHistory.now)" frameborder="0" allowfullscreen></iframe>
+            <iframe v-if="parsedYoutubeData.length>0" v-show="!isMini" class="ajust-size" width="900" height="580" :src="chooseWhichVideo(getYoutubeHistory.now)" frameborder="0" allowfullscreen></iframe>
             
             <div class="prev" @click.stop="changeYTVideo('prev')">
                 <icon class="pn-icon" name="step-backward"></icon>
@@ -43,6 +43,10 @@ export default {
           let self = this;
           let result = helps.parseYoutubeUrls(self.getYoutubeHistory.history);
           return result;
+      },
+      youtubeResumeCheck () {
+        let self = this;
+        return this.chooseWhichVideo(self.getYoutubeHistory.now);
       }
   },
 
@@ -59,9 +63,10 @@ export default {
           let time;
           if (self.getYoutubeHistory.histor !== undefined) {
               }
-            yt_id = self.parsedYoutubeData[index].id;
-            time = self.parsedYoutubeData[index].time;
-          if (!isAuto) {
+            yt_id =self.parsedYoutubeData[index].id;
+            time =(self.parsedYoutubeData== undefined)? self.parsedYoutubeData[index].time: undefined;
+            console.log(yt_id);
+          if (!isAuto && time == null) {
               return `https://www.youtube.com/embed/${yt_id}`;
           } else {
               return `https://www.youtube.com/embed/${yt_id}?start=${time}&autoplay=1`;
@@ -186,6 +191,10 @@ $ani-time: 2.2s;
 .youtube-history-box.expand {
     z-index: 6 ;
 }
+  
+  .ajust-size {
+    
+  }
 
 
 </style>

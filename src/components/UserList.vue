@@ -5,7 +5,7 @@
                 <input type="text" :placeholder="$t('chatroomSetting.SearchHint')" class="search" v-model="keyword"/>
             </div>
             <div class="userList">
-                <div :key="user.toString()" class="user-items" v-for="(user, index) in search || getUserList" @click.stop="popupMeetingBox(user)">
+                <div :key="user.accountId" class="user-items" v-for="(user, index) in search || getUserList" @click.stop="popupMeetingBox(user)">
                 <div class="avatar" :style="{background: `url(${user.avatar}) no-repeat`, backgroundSize: 'cover', backgroundPosition: `${user.avatarPos.offsetX}% ${user.avatarPos.offsetY}%`}"></div>
                 <div class="user-profile">
                     <div class="name"> <span class="text">{{user.name}}</span></div>

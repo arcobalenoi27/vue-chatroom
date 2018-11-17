@@ -11,7 +11,7 @@
                                                    backgroundPosition: `${getUserSelf.avatarPos.offsetX}% ${getUserSelf.avatarPos.offsetY}%` }"></div>
             </div>
             <div class="typing-input-container">
-                <textarea class="typing-box" cols="30" rows="4" :placeholder="$t('chatroomSetting.typingBoxText')" @keypress.enter="sendMessage()" v-model="message"></textarea>
+                <input class="typing-box" cols="30" rows="4" :placeholder="$t('chatroomSetting.typingBoxText')" @keypress.enter="sendMessage()" v-model="message">
             </div>
             
         </div>
@@ -187,6 +187,7 @@ $debug: true;
             & .typing-box {
                 @include customized-scroll;
                 // overflow-y: auto;
+                display: inline-block;
                 width: 100%;
                 height: 65px;
                 border: none;
